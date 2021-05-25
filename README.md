@@ -3,9 +3,10 @@
 searching and displaying song lyrics using spotify's API and reactJS
 
 
-API:
-- https://developer.spotify.com/documentation/web-api/
-- https://reactjs.org/
+Resources:
+- SPOTIFY API: https://developer.spotify.com/documentation/web-api/
+- REACTJS : https://reactjs.org/
+- BOOTSTRAP: https://react-bootstrap.github.io/
 
 FILES:
 
