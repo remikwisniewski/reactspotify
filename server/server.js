@@ -3,29 +3,31 @@ const SpotifiyWebApi = require('spotify-web-api-node'); // class that gets spoti
 
 const app = express(); // calls express
 
-// posting the  
+// posting the login application 
 app.post('/login', (req,res) => {
-    // Arrow function that creates spotifyAPI, uses SpotifiyWebApi class holding the credientials
-    // FIX 
+    // arrow function that creates a spotifyApi from new SpotifiyWebApi
+    // Authorize the code -> give us accessToken, refreshToken, expiresIn 
 
-    // code returns data from spotfyApi
+    // using SpotifyWebApi, once we have spotifyApi that takes in parameters, we get the "code" after
+    // and then we can call Authorization code to have access to data
     const code = req.body.code;
 
-    // passes redirectUri, clientId, clientSecret
+    // parameters needed to create new SpotifiyWebApi, passes in redirectURi, clientId, clientSecret
     const spotifyApi = new SpotifiyWebApi({ 
         redirectUri: 'http://localhost:3000',
         clientId: '', 
         clientSecret: '' 
     })
 
-    // calls spotifyApi and gets accessToken, refreshToken, expiresInx
+    // calls Authorization code to information that we need: accessToken, refreshToken, expiresIn
     spotifyApi.authorizationCodeGrant(code).then(data => {
-        res.json({ 
+        res.json({
             accessToken: data.body.access_token,
             refreshToken: data.body.refresh_token,
             expiresIn: data.body.expires_in
         })
-    }).catch(()=> { // error checker 
+    }).catch(()=> { 
+        // error checker 
         res.sendStatus(400);
     })
 
