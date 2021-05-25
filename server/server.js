@@ -32,3 +32,6 @@ app.post('/login', (req,res) => {
     })
 
 })
+
+//run the app at localhost
+app.listen(3001)
