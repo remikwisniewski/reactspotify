@@ -1,15 +1,17 @@
 # reactspotify
 
-searching and displaying song lyrics using spotify's API and reactJS
+searching and displaying song lyrics using spotify's API and reactJS with bootstrap
 
 NOW:
 - Login.js
 
 
-Resources:
+Links:
 - SPOTIFY API: https://developer.spotify.com/documentation/web-api/
 - REACTJS : https://reactjs.org/
 - BOOTSTRAP: https://react-bootstrap.github.io/
+- NODEMON: https://www.npmjs.com/package/nodemon/ 
+- SPOTIFY WEB API: https://github.com/thelinmichael/spotify-web-api-node/ 
 
 FILES:
 
