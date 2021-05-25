@@ -2,6 +2,9 @@
 
 searching and displaying song lyrics using spotify's API and reactJS
 
+NOW:
+- Login.js
+
 
 Resources:
 - SPOTIFY API: https://developer.spotify.com/documentation/web-api/
