@@ -19,6 +19,7 @@ FILES:
 - App.JS : main component file (-> index.js)
 - index.css : css of website (-> App.js)
 - Components:
-    - Header.jsx: header file (->App.js)
     - Login.js: login authorization file (->App.js)
+    - Control.js: output after gets user info from login (->App.js)
+
 
