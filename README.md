@@ -11,7 +11,7 @@ Links:
 
 
 NOW:
-- Login.js
+- Authenticate.js
 - fix accesstoken issue
 
 FILES:
@@ -21,5 +21,6 @@ FILES:
 - Components:
     - Login.js: login authorization file (->App.js)
     - Control.js: output after gets user info from login (->App.js)
+    - Authenticate.js: handles logic of user authentication (->Control.js)
 
 
