@@ -13,7 +13,7 @@ export default function Authenticate(code) {
 
     // useEffect to get data, call the API using Axios library to post to a specific URL
     // at localhost, it is posting data known as "code"
-    // then, our response outputs data with console.log(res.data)
+    // then, we get our response and it outputs data with console.log(res.data)
     useEffect(() => {
         axios
             .post('https://localhost:3001/login', {
