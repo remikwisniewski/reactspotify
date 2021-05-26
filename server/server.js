@@ -1,7 +1,11 @@
-const express = require('express'); 
-const SpotifiyWebApi = require('spotify-web-api-node'); // class that gets spotify web api
+const express = require("express"); 
+const cors = require("cors");
+const bodyParser = require("body-parser")
+const SpotifiyWebApi = require("spotify-web-api-node"); // class that gets spotify web api
 
 const app = express(); // calls express
+app.use(cors()) // calls CORS that fixes errors
+app.use(bodyParser) // calls bodyparser npm
 
 // posting the login application 
 app.post('/login', (req,res) => {
