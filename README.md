@@ -2,6 +2,8 @@
 
 searching and displaying song lyrics using spotify's API and reactJS with bootstrap
 
+currently has only login feature working
+
 Resources:
 - SPOTIFY API: https://developer.spotify.com/documentation/web-api/
 - REACTJS : https://reactjs.org/
